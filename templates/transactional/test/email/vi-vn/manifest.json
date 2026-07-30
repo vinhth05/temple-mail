@@ -5,7 +5,7 @@
   "category" : "TRANSACTIONAL",
   "channel" : "EMAIL",
   "locale" : "vi-VN",
-  "status" : "DRAFT",
+  "status" : "PUBLISHED",
   "variablesSchema" : { },
   "sampleData" : { },
   "baseCommitSha" : "2c21ba0186854e63a60160641c8102b687f15a81"

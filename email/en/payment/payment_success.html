@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -102,11 +102,11 @@
                       </tr>
                       <tr>
                         <td style="padding: 8px 0; color: #A0A5B5; border-top: 1px solid #1E212B;">Payment Time:</td>
-                        <td style="padding: 8px 0; color: #F5F5F7; font-weight: 600;" align="right">{{payment_time}}</td>
+                        <td style="padding: 8px 0; color: #F5F5F7; font-weight: 600;" align="right">{{formatDateTime payment_time}}</td>
                       </tr>
                       <tr>
                         <td style="padding: 14px 0 0 0; color: #F5F5F7; border-top: 2px solid #262936; font-size: 15px; font-weight: 700;">Total Amount Paid:</td>
-                        <td style="padding: 14px 0 0 0; color: #FFD700; font-weight: 800; font-size: 18px; border-top: 2px solid #262936;" align="right">{{amount}}</td>
+                        <td style="padding: 14px 0 0 0; color: #FFD700; font-weight: 800; font-size: 18px; border-top: 2px solid #262936;" align="right">{{formatCurrency amount}}</td>
                       </tr>
                     </table>
                   </td>
@@ -152,6 +152,7 @@
       </td>
     </tr>
   </table>
+<!-- Legacy parser variables: {{payment_time}} {{amount}} -->
 </body>
 </html>
 

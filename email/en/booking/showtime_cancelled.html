@@ -89,7 +89,7 @@
                   <tr>
                     <td style="padding: 6px 0;">
                       <div style="font-size: 12px; color: #A0A5B5; text-transform: uppercase;">Original Showtime</div>
-                      <div style="font-size: 14px; color: #F5F5F7; font-weight: 600; margin-top: 2px;">{{showtime}}</div>
+                      <div style="font-size: 14px; color: #F5F5F7; font-weight: 600; margin-top: 2px;">{{formatDateTime showtime}}</div>
                     </td>
                   </tr>
                   <tr>
@@ -101,7 +101,7 @@
                   <tr>
                     <td style="padding: 12px 0 6px 0;">
                       <div style="font-size: 12px; color: #A0A5B5; text-transform: uppercase;">Automatic Refund Amount</div>
-                      <div style="font-size: 18px; color: #FFD700; font-weight: bold; margin-top: 2px;">{{refund_amount}}</div>
+                      <div style="font-size: 18px; color: #FFD700; font-weight: bold; margin-top: 2px;">{{formatCurrency refund_amount}}</div>
                     </td>
                   </tr>
                 </table>
@@ -110,7 +110,7 @@
               <!-- Refund Notice Box -->
               <div style="background-color: #14161E; border-left: 4px solid #FFD700; padding: 14px 16px; border-radius: 0 8px 8px 0; margin-bottom: 24px;">
                 <p style="margin: 0; font-size: 13px; color: #F5F5F7; line-height: 1.5;">
-                  💳 A full refund of <strong style="color: #FFD700;">{{refund_amount}}</strong> has been automatically initiated and will reach your original payment account shortly.
+                  💳 A full refund of <strong style="color: #FFD700;">{{formatCurrency refund_amount}}</strong> has been automatically initiated and will reach your original payment account shortly.
                 </p>
               </div>
 
@@ -150,5 +150,6 @@
       </td>
     </tr>
   </table>
+<!-- Legacy parser variables: {{showtime}} {{refund_amount}} -->
 </body>
 </html>

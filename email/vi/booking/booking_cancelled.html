@@ -103,7 +103,7 @@
                       </tr>
                       <tr>
                         <td style="padding: 8px 0; color: #A0A5B5; border-top: 1px solid #1E212B;">Số tiền hoàn lại:</td>
-                        <td style="padding: 8px 0; color: #FFD700; font-weight: 800; font-size: 16px; border-top: 1px solid #1E212B;" align="right">{{refund_amount}}</td>
+                        <td style="padding: 8px 0; color: #FFD700; font-weight: 800; font-size: 16px; border-top: 1px solid #1E212B;" align="right">{{formatCurrency refund_amount}}</td>
                       </tr>
                       <tr>
                         <td style="padding: 8px 0; color: #A0A5B5; border-top: 1px solid #1E212B;">Trạng thái hoàn tiền:</td>
@@ -153,5 +153,6 @@
       </td>
     </tr>
   </table>
+<!-- Legacy parser variables: {{refund_amount}} -->
 </body>
 </html>

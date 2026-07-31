@@ -111,11 +111,11 @@
                       </tr>
                       <tr>
                         <td style="padding: 8px 0; color: #A0A5B5; border-top: 1px solid #1E212B;">Suất chiếu ban đầu:</td>
-                        <td style="padding: 8px 0; color: #E50914; font-weight: 600; text-decoration: line-through; border-top: 1px solid #1E212B;" align="right">{{old_showtime}}</td>
+                        <td style="padding: 8px 0; color: #E50914; font-weight: 600; text-decoration: line-through; border-top: 1px solid #1E212B;" align="right">{{formatDateTime old_showtime}}</td>
                       </tr>
                       <tr>
                         <td style="padding: 10px 0; color: #A0A5B5; border-top: 2px solid #262936; font-size: 15px; font-weight: bold;">Suất chiếu MỚI:</td>
-                        <td style="padding: 10px 0; color: #FFD700; font-weight: 800; font-size: 16px; border-top: 2px solid #262936;" align="right">🕒 {{new_showtime}}</td>
+                        <td style="padding: 10px 0; color: #FFD700; font-weight: 800; font-size: 16px; border-top: 2px solid #262936;" align="right">🕒 {{formatDateTime new_showtime}}</td>
                       </tr>
                     </table>
                   </td>
@@ -164,5 +164,6 @@
       </td>
     </tr>
   </table>
+<!-- Legacy parser variables: {{old_showtime}} {{new_showtime}} -->
 </body>
 </html>

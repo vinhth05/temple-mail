@@ -108,7 +108,7 @@
                       </tr>
                       <tr>
                         <td style="padding: 8px 0; color: #A0A5B5; border-top: 1px solid #1E212B;">Suất chiếu:</td>
-                        <td style="padding: 8px 0; color: #FFD700; font-weight: 700; border-top: 1px solid #1E212B;" align="right">{{showtime}}</td>
+                        <td style="padding: 8px 0; color: #FFD700; font-weight: 700; border-top: 1px solid #1E212B;" align="right">{{formatDateTime showtime}}</td>
                       </tr>
                       <tr>
                         <td style="padding: 8px 0; color: #A0A5B5; border-top: 1px solid #1E212B;">Ghế chọn:</td>
@@ -116,7 +116,7 @@
                       </tr>
                       <tr>
                         <td style="padding: 12px 0 0 0; color: #A0A5B5; border-top: 2px solid #262936; font-size: 15px; font-weight: bold;">Tổng tiền:</td>
-                        <td style="padding: 12px 0 0 0; color: #FFD700; font-weight: 800; font-size: 18px; border-top: 2px solid #262936;" align="right">{{total_amount}}</td>
+                        <td style="padding: 12px 0 0 0; color: #FFD700; font-weight: 800; font-size: 18px; border-top: 2px solid #262936;" align="right">{{formatCurrency total_amount}}</td>
                       </tr>
                     </table>
                   </td>
@@ -177,5 +177,6 @@
       </td>
     </tr>
   </table>
+<!-- Legacy parser variables: {{showtime}} {{total_amount}} -->
 </body>
 </html>

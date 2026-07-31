@@ -97,7 +97,7 @@
                         <tr>
                           <td width="50%" style="vertical-align: top;">
                             <div style="font-size: 12px; color: #A0A5B5; text-transform: uppercase;">Refund Amount</div>
-                            <div style="font-size: 16px; color: #FFD700; font-weight: bold; margin-top: 2px;">{{refund_amount}}</div>
+                            <div style="font-size: 16px; color: #FFD700; font-weight: bold; margin-top: 2px;">{{formatCurrency refund_amount}}</div>
                           </td>
                           <td width="50%" style="vertical-align: top;">
                             <div style="font-size: 12px; color: #A0A5B5; text-transform: uppercase;">Refund Status</div>
@@ -150,5 +150,6 @@
       </td>
     </tr>
   </table>
+<!-- Legacy parser variables: {{refund_amount}} -->
 </body>
 </html>
